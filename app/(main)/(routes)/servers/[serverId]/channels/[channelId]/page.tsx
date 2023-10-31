@@ -50,8 +50,7 @@ const ChannelIdPage = async ({
         serverId={channel.serverId}
         type="channel"
       />
-      <div className="flex-1">
-        <ChatWelcome name={channel.name} type="channel" />
+
         <ChatMessages
           member={member}
           name={channel.name}
@@ -77,7 +76,6 @@ const ChannelIdPage = async ({
             serverId: channel.serverId,
           }}
         />
-      </div>
     </div>
   );
 }
